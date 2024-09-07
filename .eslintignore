@@ -1,0 +1,7 @@
+/android
+/ios
+/.expo
+/.husky
+/.vscode
+/.shell-scripts
+expo-env.d.ts
