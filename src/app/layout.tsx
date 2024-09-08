@@ -32,6 +32,10 @@ export default function RootLayout({
 					integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
 					crossOrigin="anonymous"
 				/>
+				<link
+					rel="stylesheet"
+					href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+				></link>
 			</head>
 			<body className={`${geistSans.variable} ${geistMono.variable}`}>
 				{children}

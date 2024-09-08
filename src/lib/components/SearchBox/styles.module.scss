@@ -1,0 +1,20 @@
+.searchboxWrapper {
+	padding: 0 0.5rem;
+	input {
+		outline: none;
+	}
+	border-radius: 24px;
+}
+
+.searchResultsWrapper {
+	.resultCard {
+		.flagImage {
+			width: 2rem;
+			aspect-ratio: 2/1;
+			background-size: cover;
+		}
+	}
+	img {
+		width: 2rem;
+	}
+}

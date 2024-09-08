@@ -1,14 +1,20 @@
 'use client';
-import SearchBar from '@/components/SearchBar';
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import SearchBox from '@/lib/components/SearchBox';
+import { useEffect } from 'react';
 
 export default function Home() {
-	const queryClient = new QueryClient();
+	useEffect(() => {
+		if ('serviceWorker' in navigator) {
+			global.navigator.serviceWorker
+				.register('/sw.js')
+				.then(registration =>
+					console.log('scope is: ', registration.scope),
+				);
+		}
+	}, []);
 	return (
-		<QueryClientProvider client={queryClient}>
-			<div className="d-flex justify-content-center mt-5">
-				<SearchBar />
-			</div>
-		</QueryClientProvider>
+		<div className="d-flex justify-content-center mt-5">
+			<SearchBox />
+		</div>
 	);
 }
