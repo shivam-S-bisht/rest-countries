@@ -1,5 +1,6 @@
 .searchboxWrapper {
 	padding: 0 0.5rem;
+	width: 50%;
 	border-radius: 24px;
 	i {
 		font-size: 0.9rem;
@@ -35,5 +36,11 @@
 	}
 	img {
 		width: 2rem;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.searchboxWrapper {
+		width: 100%;
 	}
 }
