@@ -2,6 +2,8 @@
 export {};
 
 declare global {
+	let bootstrap;
+
 	interface ICountriesData {
 		name: {
 			common: string;
