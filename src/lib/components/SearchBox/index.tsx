@@ -15,7 +15,7 @@ function SearchBox() {
 
 	return (
 		<div
-			className={`${styles.searchboxWrapper} border w-50 d-flex flex-column justify-content-center`}
+			className={`${styles.searchboxWrapper} border w-50 d-flex flex-column justify-content-center mb-3`}
 		>
 			<div className="d-flex align-items-center gap-2">
 				<i className="bi bi-search text-secondary" />

@@ -1,9 +1,16 @@
 .searchboxWrapper {
 	padding: 0 0.5rem;
+	border-radius: 24px;
+	i {
+		font-size: 0.9rem;
+	}
 	input {
 		outline: none;
 	}
-	border-radius: 24px;
+}
+
+.searchboxWrapper:hover {
+	box-shadow: 0 0 6px #dee2e6;
 }
 
 .searchResultsWrapper {

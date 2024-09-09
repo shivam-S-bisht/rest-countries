@@ -16,7 +16,7 @@ self.addEventListener('install', () => {
 // Fetch event: Respond with cached data or fetch from network
 self.addEventListener('fetch', event => {
 	// update the version, to send updates in service worker to invalidate cache
-	const CACHE_NAME = 'countries-cache-v5';
+	const CACHE_NAME = 'countries-cache-v6';
 	event.respondWith(
 		caches
 			.match(event.request)
@@ -25,8 +25,8 @@ self.addEventListener('fetch', event => {
 				if (cachedResponse) {
 					return cachedResponse;
 				}
-				console.log('fetching from network==');
 				// Otherwise, fetch from network
+				// TODO can we debounce here ?
 				return fetch(event.request).then(networkResponse => {
 					// Cache the response for future use
 					return caches.open(CACHE_NAME).then(cache => {
