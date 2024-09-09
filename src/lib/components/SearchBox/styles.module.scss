@@ -7,6 +7,9 @@
 	input {
 		outline: none;
 	}
+	&[data-view='false'] {
+		max-height: 22.8rem;
+	}
 }
 
 .searchboxWrapper:hover {
@@ -14,8 +17,11 @@
 }
 
 .searchResultsWrapper {
-	max-height: 22.8rem;
 	overflow: scroll;
+	max-height: calc(100vh - 8rem);
+	.card {
+		width: 20rem;
+	}
 	.hr {
 		height: 1px;
 		border-top: 1px solid #dee2e6;

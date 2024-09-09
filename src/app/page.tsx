@@ -1,8 +1,12 @@
 'use client';
 import SearchBox from '@/lib/components/SearchBox';
-import { useEffect } from 'react';
+import SwitchView from '@/lib/components/SwitchView';
+import { useEffect, useState } from 'react';
 
 export default function Home() {
+	// false - normal view, true - detailed view
+	const [view, setView] = useState(false);
+
 	useEffect(() => {
 		if ('serviceWorker' in navigator) {
 			global.navigator.serviceWorker
@@ -12,9 +16,13 @@ export default function Home() {
 				);
 		}
 	}, []);
+
 	return (
-		<div className="d-flex justify-content-center mt-5">
-			<SearchBox />
+		<div className="m-4 overflow-hidden">
+			<SwitchView setView={setView} />
+			<div className="d-flex align-items-center flex-column">
+				<SearchBox view={view} />
+			</div>
 		</div>
 	);
 }

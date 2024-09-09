@@ -14,7 +14,7 @@ declare global {
 			};
 		};
 
-		capital: string[];
+		capital: string;
 		region: string;
 		subregion: string;
 		languages: {
