@@ -22,6 +22,7 @@ function SearchBox(props: ISearchBox) {
 
 	return (
 		<>
+			{/* Can we add speech to search here ? */}
 			<div
 				data-view={view}
 				className={`${styles.searchboxWrapper} border w-50 d-flex flex-column justify-content-center mb-3`}

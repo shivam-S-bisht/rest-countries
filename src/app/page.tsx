@@ -1,4 +1,5 @@
 'use client';
+
 import SearchBox from '@/lib/components/SearchBox';
 import SwitchView from '@/lib/components/SwitchView';
 import { useEffect, useState } from 'react';
