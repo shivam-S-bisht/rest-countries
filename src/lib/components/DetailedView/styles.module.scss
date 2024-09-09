@@ -1,0 +1,7 @@
+.searchResultsWrapper {
+	overflow: scroll;
+	max-height: calc(100vh - 8rem);
+	.card {
+		width: 20rem;
+	}
+}

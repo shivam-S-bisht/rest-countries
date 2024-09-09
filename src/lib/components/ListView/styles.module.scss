@@ -1,0 +1,17 @@
+.searchResultsWrapper {
+	overflow: scroll;
+	.hr {
+		height: 1px;
+		border-top: 1px solid #dee2e6;
+	}
+	.resultCard {
+		.flagImage {
+			width: 2rem;
+			aspect-ratio: 2/1;
+			background-size: cover;
+		}
+	}
+	img {
+		width: 2rem;
+	}
+}
